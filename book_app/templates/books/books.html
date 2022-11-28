@@ -1,0 +1,39 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %} books Tables {% endblock title %}
+
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+{% block content %}
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Books Page</a>
+  </nav>
+<table class="table my-4">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">author</th>
+        <th scope="col">publish_year</th>
+        <th scope="col">edition</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+      <tr>
+        <th scope="row">1</th>
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.publish_year}}</td>
+        <td>{{book.edition}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock content %}
+
+<!--Block javascript -->
+
+{% block javascripts %}
+{% endblock javascripts %}

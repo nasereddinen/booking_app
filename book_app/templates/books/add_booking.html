@@ -1,0 +1,29 @@
+
+{% extends 'layouts/layout.html' %}
+
+{% block title %} booking Tables {% endblock title %}
+
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+{% block content %}
+<nav class="navbar navbar-light bg-primary">
+    <a class="navbar-brand" href="#">Add booking</a>
+  </nav>
+  <div class="py-5">
+    <div class="row">
+        <div class="col-12">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+<!--Block javascript -->
+
+{% block javascripts %}
+{% endblock javascripts %}
