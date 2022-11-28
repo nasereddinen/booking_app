@@ -10,8 +10,8 @@ class index(View):
         return HttpResponse('Welcome')
 
 
-class BookListView(ListView):
-    model = Books
+class MemberListView(ListView):
+    model = Member
     template_name = 'books/books.html'
     context_object_name = 'books'
 
@@ -25,7 +25,7 @@ class BookingListView(ListView):
     template_name = 'books/booking.html'
     context_object_name = 'bookings'
 
-class Add_booking(CreateView):
+class Add_bot(CreateView):
     model=Booking
     success_url = '/booking/'
     fields = ['book','member','expiration_date']

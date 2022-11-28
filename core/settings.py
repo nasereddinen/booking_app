@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'book_app'
+    'with_u'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'booking',
         'USER': 'postgres',
-        'PASSWORD': 'ahmed',
+        'PASSWORD': '2309omi',
         'HOST': 'localhost',
         'PORT': '',
 

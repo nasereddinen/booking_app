@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import *
 # Register your models here.
-class BookAdmin(admin.ModelAdmin):
+class CategorieAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'edition')
 
 class BookingAdmin(admin.ModelAdmin):

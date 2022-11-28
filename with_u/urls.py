@@ -1,5 +1,5 @@
 from django.urls import path
-import book_app.views as views
+import with_u.views as views
 
 """
 book app urls goes here
